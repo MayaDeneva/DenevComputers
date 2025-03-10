@@ -27,7 +27,7 @@ const ContactsPage = () => {
       <h1 className='text-3xl font-bold m-4'>Контакти</h1>
       <div className='flex flex-row justify-around w-full'>
 
-      <LoadScript googleMapsApiKey="AIzaSyD1ZjxirHIQC4hpJv1p0RiMAR_HWQO98po">
+      <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY}>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
