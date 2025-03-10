@@ -1,0 +1,6 @@
+.category {
+    @apply font-semibold;
+    @apply text-white text-base;
+    @apply hover:bg-sky-500 hover:text-white;
+    @apply hidden sm:flex;
+}

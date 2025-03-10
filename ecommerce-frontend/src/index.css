@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    max-width: 100%; /* Set to 100% for default behavior */
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+
+.btn-primary {
+    @apply bg-primary border-0;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition */
+}
+
+.btn-secondary {
+   
+    @apply bg-secondary;
+    /* @apply inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center rounded-lg; */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition */
+}
+
+.btn-primary:hover {
+    @apply hover:bg-secondary;
+    
+    /* transform: scale(1.05); Optional: adds scaling effect */
+}
+
+.btn-secondary:hover {
+    @apply hover:bg-secondary;
+    @apply hover:text-white;
+    /* transform: scale(1.05); Optional: adds scaling effect */
+}
+
+.productsHeader {
+    @apply text-xl
+}
+
+/* Apply to the container where you want to hide the scrollbar */
+.scroll-hidden {
+    overflow-y: scroll; /* Ensure scrolling is enabled */
+  }
+  
+  /* Hide the scrollbar for WebKit browsers */
+  .scroll-hidden::-webkit-scrollbar {
+    width: 0; /* Hide the scrollbar */
+    height: 0; /* Optional: hides horizontal scrollbar */
+  }
+  
+  /* Optional: Optionally, you can change the background or color of the scroll container */
+
+  
+.btn-home {
+    @apply border-primary border-2;
+    background-color: transparent;
+    @apply inline-flex items-center justify-center text-base font-medium text-center rounded-lg;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition */
+    @apply hover:bg-secondary hover:text-white;
+}
+  
